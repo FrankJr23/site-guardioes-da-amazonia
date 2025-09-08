@@ -1,0 +1,195 @@
+
+
+body {
+    border-color: bisque;
+    background-color: bisque;
+    lighting-color:#fff;
+    font-family: Roboto;
+    font-family: Roboto, sans-serif;
+    margin: 1px;
+    
+}
+
+.header {
+    background-image: url("../img/floresta-amazonica.webp");
+    background-size: cover;
+    background-position:center;
+    height: 180px;
+    color: #10510c;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: end;
+    padding:20px;
+    position: relative;
+    font-family:"./fonts/neue-machina-regular.otf"
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(0,0,0,0,5);
+    padding: 10px 15px;
+    border-radius: 8px;
+    max-width: fit-content;
+}
+
+.logo {
+    width: 160px;
+    height: auto;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    align-content: space-between;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.main-nav a{
+    text-decoration:none;
+    color: white;
+    font-weight: 3rem;
+    border: solid 2px;
+    border-radius: 5px;
+    padding: 0.4rem;
+    box-shadow: #10510c;
+}
+
+.main-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.451);
+}
+
+.container {
+    flex-grow: 1;
+    margin: auto;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.container h2{
+    color: #10510c;
+    margin-top: 1rem;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.section {
+    font-size: 1rem;
+    color: #10510c;
+    margin-top: 0;
+}
+
+.img-float{
+    float: left;
+    margin: 10px 20px 10px 0;
+    width: 500px;
+    border-radius: 8px;
+}
+
+.maps-bio {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.map-frame {
+    width: 100%;
+    height: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.main-wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.sidebar {
+    flex-basis: 280px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.side-section {
+    padding-bottom: 15px;
+    border-bottom: 2px solid #10510c;
+    text-align: center;
+}
+
+.side-section:last-child {
+    border-bottom: none;
+}
+
+.side-section h3{
+    font-size: 1.2rem;
+    color: #10510c;
+    margin-top: 1rem;
+}
+
+.side-section button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 1rem;
+    margin-bottom: 5px;
+    background-color: #fff;
+    border: 3px solid #10510c;
+    border-radius: 5px;
+    cursor:pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #10510c;
+}
+
+.side-section button:hover{
+    background-color: #14623c83;
+    color: white;
+}
+
+.photo-gallery {
+    border: 1px solid #333;
+    height: 300px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: italic;
+    color: #666;
+}
+
+.links-section {
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+    display: grid;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.links-section img{
+    width: 300px;
+}

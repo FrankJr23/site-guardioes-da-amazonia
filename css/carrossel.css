@@ -1,0 +1,63 @@
+.roller-master {
+    position: relative;
+    width: 100%;
+    max-width: 1350px;
+    margin-left: 5.3rem;
+}
+
+.links-relacionados {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px 0;
+}
+
+.roller {
+    display: flex;
+    gap: 20px;
+}
+
+.item-roller {
+    flex: 0 0 300px;
+}
+
+.item-roller img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.item-roller:hover img {
+    transform: scale(1.05);
+}
+
+.roller-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: background-color 0.3s;
+}
+
+.roller-btn:hover {
+    background-color: rgba(66, 174, 188, 0.8);
+}
+
+.prev {
+    left: 15px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+

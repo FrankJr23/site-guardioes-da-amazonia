@@ -1,0 +1,13 @@
+.photo-gallery {
+    height: 300px;
+    background-color: #0a4123;
+    border: 5px solid #10510c;
+}
+
+#slideShow {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+}

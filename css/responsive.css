@@ -1,0 +1,104 @@
+
+/* Media Query para telas menores (ex: tablets e celulares) */
+@media (max-width: 600px) {
+    /* Força o layout a mudar de linha para coluna */
+    .main-wrap {
+        flex-direction: column !important;
+        gap: 10px;
+        margin: 10px auto;
+        padding: 0 10px;
+        max-width: 100%;
+    }
+
+    /* As duas colunas (main e sidebar) passam a ocupar 100% da largura */
+    .container,
+    .sidebar {
+        flex: 100%;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .header {
+        flex-direction: column;
+        height: auto; /* A altura se ajusta ao conteúdo */
+        min-height: 150px; /* Garante uma altura mínima para a imagem ser visível */
+        padding: 15px;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+        
+        /* Ajusta a posição da imagem de fundo */
+        background-position: center center;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .section-title,
+    .side-section h3 {
+        font-size: 1.5rem;
+    }
+
+    .section-text {
+        font-size: 1rem;
+    }
+    
+    .img-float {
+        float: none;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    
+    .carousel-container {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    
+    .fauna-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-text {
+        text-align: left;
+    }
+
+    
+    .contact-form-container {
+        max-width: 100%;
+        margin: 20px auto;
+    }
+
+    
+    .footer-info {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .footer-left-col,
+    .footer-info-center,
+    .footer-info-dir {
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .social-media {
+        justify-content: center;
+    }
+    
+    .footer-background-image {
+        display: none;
+    }
+}
